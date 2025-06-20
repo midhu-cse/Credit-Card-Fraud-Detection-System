@@ -15,5 +15,4 @@ A machine learning solution to detect fraudulent credit card transactions using 
 
 ---
 
-## 📁 Project Structure
 
