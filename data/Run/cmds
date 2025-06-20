@@ -1,0 +1,21 @@
+Setup and Installation
+1. Install Dependencies:
+pip install -r requirements.txt
+This will install all the required packages listed in your requirements.txt file (fastapi, uvicorn, scikit-learn, pandas, numpy, joblib, streamlit, pydantic, seaborn, matplotlib, plotly, requests, pytest).
+Running the Project
+2. Train the Model (if needed):
+python src/train_model.py
+This will train your fraud detection model using the creditcard.csv dataset.
+3. Start the FastAPI Backend:
+hpython src/main.py
+Or alternatively:
+uvicorn src.main:app --reload
+This starts the API server (usually on http://localhost:8000).
+4. Run the Streamlit Frontend:
+streamlit run src/streamlit_app.py
+This opens the web interface (usually on http://localhost:8501).
+Testing
+5. Run Tests:
+python test_api.py
+Or if using pytest:
+pytest
